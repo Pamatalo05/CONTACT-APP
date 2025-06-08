@@ -1,6 +1,6 @@
 package com.espol.group04.grupo_04.Clases;
 
-public class PersonaNatural extends Usuario{
+public class PersonaNatural extends Contact{
     String apellido;
     String fechaNacimiento;
     public PersonaNatural(String numeroTelefono, String nombre, String apellido, String fechaNacimiento) {

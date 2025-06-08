@@ -5,7 +5,6 @@ public class Contact {
 
     private String name;
     private String address;
-
     private DoubleCircularList<PhoneNumber> phoneNumbers;
     private DoubleCircularList<Email> emails;
     private DoubleCircularList<SocialMedia> socialMediaAccounts;
