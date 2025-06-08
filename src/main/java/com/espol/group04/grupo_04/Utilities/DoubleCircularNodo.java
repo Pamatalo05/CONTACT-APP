@@ -4,10 +4,7 @@
  */
 package com.espol.group04.grupo_04.Utilities;
 
-/**
- *
- * @author misae
- */
+
 public class DoubleCircularNodo<E> {
     private E data;
     DoubleCircularNodo next;

@@ -4,10 +4,6 @@
  */
 package com.espol.group04.grupo_04.Utilities;
 
-/**
- *
- * @author misae
- */
 public class DoubleCircularList<E> implements Iterable<E>{
     DoubleCircularNodo head;
     

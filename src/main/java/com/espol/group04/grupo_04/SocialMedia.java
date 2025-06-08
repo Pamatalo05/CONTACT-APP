@@ -4,7 +4,6 @@
  */
 package com.espol.group04.grupo_04;
 
-
 public class SocialMedia {
     public String platform;
     public String username;

@@ -4,10 +4,6 @@
  */
 package com.espol.group04.grupo_04;
 
-/**
- *
- * @author misae
- */
 public class PhoneNumber {
     public String number;
     public String type; 
