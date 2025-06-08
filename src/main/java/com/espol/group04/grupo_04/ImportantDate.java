@@ -4,10 +4,6 @@
  */
 package com.espol.group04.grupo_04;
 
-/**
- *
- * @author misae
- */
 public class ImportantDate {
     public String label; 
     public String date;

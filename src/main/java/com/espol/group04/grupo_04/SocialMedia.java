@@ -4,10 +4,7 @@
  */
 package com.espol.group04.grupo_04;
 
-/**
- *
- * @author misae
- */
+
 public class SocialMedia {
     public String platform;
     public String username;

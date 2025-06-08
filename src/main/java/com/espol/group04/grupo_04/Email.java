@@ -4,10 +4,7 @@
  */
 package com.espol.group04.grupo_04;
 
-/**
- *
- * @author misae
- */
+
 public class Email {
     public String address;
     public String label; 

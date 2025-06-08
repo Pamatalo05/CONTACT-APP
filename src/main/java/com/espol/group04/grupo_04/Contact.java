@@ -4,10 +4,6 @@
  */
 package com.espol.group04.grupo_04;
 
-/**
- *
- * @author misae
- */
 import com.espol.group04.grupo_04.Utilities.DoubleCircularList;
 public class Contact {
 
