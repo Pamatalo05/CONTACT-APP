@@ -13,16 +13,16 @@ public class DoubleCircularNodo<E> {
     public E getData(){
         return this.data;
     }
-    public DoubleCircularNodo getNext(){
+    public DoubleCircularNodo<E> getNext(){
         return this.next;
     }
-    public DoubleCircularNodo getPrevious(){
+    public DoubleCircularNodo<E> getPrevious(){
         return this.previous;
     }
-    public void setNext(DoubleCircularNodo next){
+    public void setNext(DoubleCircularNodo<E> next){
         this.next = next;
     }
-    public void setPrevious(DoubleCircularNodo previous){
+    public void setPrevious(DoubleCircularNodo<E> previous){
         this.previous = previous;
     }
     public void setData(E data){

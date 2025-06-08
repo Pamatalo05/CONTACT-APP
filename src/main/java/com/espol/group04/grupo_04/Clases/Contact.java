@@ -1,6 +1,4 @@
 package com.espol.group04.grupo_04.Clases;
-
-import com.espol.group04.grupo_04.Clases.Utilities.DoubleCircularList;
 public class Contact {
 
     private String name;

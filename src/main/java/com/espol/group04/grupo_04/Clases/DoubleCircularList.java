@@ -2,18 +2,18 @@ package com.espol.group04.grupo_04.Clases;
 
 
 public class DoubleCircularList<E> {
-    DoubleCircularNodo head;
+    DoubleCircularNodo<E> head;
     
     public DoubleCircularList(){
         head=null;
     }
     
     public void addLast(E newData){
-        DoubleCircularNodo<E> newNodo = new DoubleCircularNodo(newData);
+        DoubleCircularNodo<E> newNodo = new DoubleCircularNodo<E>(newData);
         if(head==null){
             head = newNodo;
         }else{
-            DoubleCircularNodo lastOne = head.getPrevious();
+            DoubleCircularNodo<E> lastOne = head.getPrevious();
             newNodo.setNext(head);
             newNodo.setPrevious(lastOne);
             head.setPrevious(newNodo);
@@ -22,11 +22,11 @@ public class DoubleCircularList<E> {
     }
     
     public void addFirst(E newData){
-        DoubleCircularNodo<E> newNodo = new DoubleCircularNodo(newData);
+        DoubleCircularNodo<E> newNodo = new DoubleCircularNodo<E>(newData);
         if(head==null){
             head = newNodo;
         }else{
-            DoubleCircularNodo lastOne = head.getPrevious();
+            DoubleCircularNodo<E> lastOne = head.getPrevious();
             newNodo.setNext(head);
             newNodo.setPrevious(lastOne);
             head.setPrevious(newNodo);
@@ -60,7 +60,7 @@ public class DoubleCircularList<E> {
             System.out.println("Empty list");
             return;
         }
-        DoubleCircularNodo current = head;
+        DoubleCircularNodo<E> current = head;
             do {
                 System.out.print(current.getData() + " ⇄ ");
                 current = current.getNext();
@@ -73,8 +73,8 @@ public class DoubleCircularList<E> {
             System.out.println("Empty list");
             return;
         }
-        DoubleCircularNodo current = head.getPrevious();
-        DoubleCircularNodo end = current;
+        DoubleCircularNodo<E> current = head.getPrevious();
+        DoubleCircularNodo<E> end = current;
         do {
             System.out.print(current.getData() + " ⇄ ");
             current = current.getPrevious();
@@ -85,7 +85,7 @@ public class DoubleCircularList<E> {
     public int size() {
         if (head == null) return 0;
         int count = 0;
-        DoubleCircularNodo current = head;
+        DoubleCircularNodo<E> current = head;
         do {
             count++;
             current = current.getNext();

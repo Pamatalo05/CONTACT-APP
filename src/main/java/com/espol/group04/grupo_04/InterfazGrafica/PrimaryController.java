@@ -1,7 +1,7 @@
 package com.espol.group04.grupo_04.InterfazGrafica;
 
-import com.espol.group04.grupo_04.Utilities.InterfazGrafica.DoubleCircularList;
-import com.espol.group04.grupo_04.Utilities.InterfazGrafica.DoubleCircularNodo;
+import com.espol.group04.grupo_04.Clases.DoubleCircularList;
+import com.espol.group04.grupo_04.Clases.DoubleCircularNodo;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
