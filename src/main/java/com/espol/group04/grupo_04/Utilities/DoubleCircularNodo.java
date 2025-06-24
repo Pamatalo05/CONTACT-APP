@@ -2,35 +2,33 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.espol.group04.grupo_04.Utilities;
+package com.espol.group05.grupo_05.Utilities;
 
-
+/**
+ *
+ * @author misae
+ */
 public class DoubleCircularNodo<E> {
     private E data;
-    DoubleCircularNodo next;
-    DoubleCircularNodo previous;
-    
+    private DoubleCircularNodo<E> next;
+    private DoubleCircularNodo<E> previous;
+
     public DoubleCircularNodo(E data){
         this.data = data;
-        next = null;
-        previous = null;
+        this.next = this;
+        this.previous = this;
     }
-    public E getData(){
-        return this.data;
-    }
-    public DoubleCircularNodo getNext(){
-        return this.next;
-    }
-    public DoubleCircularNodo getPrevious(){
-        return this.previous;
-    }
-    public void setNext(DoubleCircularNodo next){
-        this.next = next;
-    }
-    public void setPrevious(DoubleCircularNodo previous){
-        this.previous = previous;
-    }
-    public void setData(E data){
-        this.data = data;
+
+    public E getData() { return data; }
+    public void setData(E data) { this.data = data; }
+
+    public DoubleCircularNodo<E> getNext() { return next; }
+    public void setNext(DoubleCircularNodo<E> next) { this.next = next; }
+
+    public DoubleCircularNodo<E> getPrevious() { return previous; }
+    public void setPrevious(DoubleCircularNodo<E> previous) { this.previous = previous; }
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }
